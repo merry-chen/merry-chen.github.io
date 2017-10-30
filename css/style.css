@@ -318,7 +318,7 @@ img {
   margin-right: auto;
 }
 .showcase img {
-  width: 50%;
+  width: 75%;
 }
 @media only screen and (max-width: 992px) {
   figure {
@@ -339,7 +339,6 @@ img {
 #field_study img,
 #heuristic_evaluation img,
 #children-book-narrative img,
-#interface-screens img,
 #screen-design-desktop img,
 #identity-design-business-cards img,
 #identity-design-letterheads img,
@@ -890,6 +889,11 @@ HOMEPAGE
 .home-content-about {
   text-align: center;
 }
+
+#home-projects .project-preview {
+  height: 500px;
+}
+
 .project-preview {
   color: #FFF;
   font-weight: 700;
@@ -950,4 +954,45 @@ HOMEPAGE
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1)
+}
+/* -------------------------------- 
+
+BUTTON
+
+-------------------------------- */
+.btn {
+  text-decoration: none;
+  border: 1px solid rgba(38, 39, 45, 0.1);
+  border-radius: 30px;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  display: inline-block;
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 1.42857143;
+  padding: 9px 28px;
+}
+#store {
+  text-align: center;
+  margin-top: 40px;
+}
+#store .btn-dark {
+  background-color: #131315;
+  color: white;
+  margin: 10px;
+}
+#store .btn-dark i {
+  font-size: 32px;
+  display: inline-block;
+  margin-left: 0;
+  margin-right: 18px;
+}
+#store .btn-dark span {
+  font-size: 12px;
+  display: inline-block;
+  text-align: left;
+}
+#store .btn-dark span b {
+  font-size: 22px;
+  line-height: 18px;
 }
