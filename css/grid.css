@@ -367,9 +367,6 @@ aside {
 .post-nav a:hover h3 {
   color: #95A6B4;
 }
-.post-nav a:hover i {
-  color: #95A6B4;
-}
 /* -------------------------------- 
 
 NAVIGATION
@@ -424,6 +421,9 @@ NAVIGATION
   position: relative;
   height: 100%;
 }
+.current {
+  box-shadow: 0px 2px #95A6B4;
+}
 .navigation-link {
   display: inline;
   font-size: 13px;
@@ -464,5 +464,10 @@ NAVIGATION
     width: 1170px;
     padding-left: 30px;
     padding-right: 30px;
+  }
+}
+@media (min-width: 992px) {
+  #home-projects .project-preview {
+      height: 500px;
   }
 }
