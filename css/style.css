@@ -110,12 +110,15 @@ p {
 }
 #home-case-studies h3 {
   margin-bottom: 0;
+  margin-top: 1em;
 }
 #home-work-experience h3 {
   margin-bottom: 0;
+  margin-top: 1em;
 }
 #home-projects h3 {
   margin-bottom: 0;
+  margin-top: 1em;
 }
 #home-case-studies h4 {
   text-align: center;
@@ -215,6 +218,29 @@ p {
   margin-left: auto;
   margin-top: 0.5em;
 }
+hr {
+  width: 50px;
+  height: 2px;
+  margin: 1.5em auto;
+  background-color: #e96c24;
+  border: none;
+}
+.f-icon {
+  margin-top: 2em;
+}
+.f-icon i {
+  font-size: 2.5em;
+  color: #e96c24;
+}
+#home-case-studies i,
+#home-work-experience i,
+#home-projects i {
+  font-size: 2.5em;
+  color: #95A6B4;
+}
+.text-center {
+  text-align: center;
+}
 /* -------------------------------- 
 
 LIST STYLES
@@ -225,7 +251,7 @@ ul {
   color: #333;
   font-size: 1em;
   font-weight: 300;
-  padding: 0.5em 0 0.5em 0;
+  padding: 0.5em 0 0.1em 0;
   line-height: 32px;
 }
 li {
@@ -282,8 +308,24 @@ LINK STYLES
 -------------------------------- */
 a {
   text-decoration: none;
+  color: #333;
+  background-color: transparent;
   font-weight: 700;
-  color: #34495e;
+}
+p a {
+  position: relative;
+  margin: .67em 0;
+  padding: 0 .15em;
+  text-decoration: none;
+  border-bottom: 3px solid #333;
+  font-weight: 300;
+}
+p a:hover {
+  border-bottom: 3px solid #95A6B4;
+  color: #95A6B4;
+}
+a:active, a:hover {
+  border-color: #333;
 }
 /* -------------------------------- 
 
@@ -292,7 +334,6 @@ BUTTON STYLES
 -------------------------------- */
 a.button {
   color: #FFF;
-  border: 2px solid #7f8c8d;
   background: #95A6B4;
   display: inline-block;
   padding: 1em 2em;
@@ -317,6 +358,7 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  pointer-events: none;
 }
 .showcase img {
   width: 75%;
@@ -327,7 +369,19 @@ img {
     padding-bottom: 1em;
   }
   .showcase img {
-    width: 100%;
+    width: 75%;
+  }
+}
+.mobile-showcase img {
+  width: 50%;
+}
+@media only screen and (max-width: 992px) {
+  figure {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  .mobile-showcase img {
+    width: 75%;
   }
 }
 #screen-design-desktop figure {
@@ -343,7 +397,12 @@ img {
 #screen-design-desktop img,
 #identity-design-business-cards img,
 #identity-design-letterheads img,
-#celayix img {
+#celayix img,
+#grid-view img,
+#map-view img,
+#fast-check-in img,
+#events img,
+#time-and-attendance img {
   -webkit-box-shadow: 0 .25rem 2.5rem rgba(0,0,0,0.2);
   box-shadow: 0 .25rem 2.5rem rgba(0,0,0,0.2);
 }
@@ -892,7 +951,7 @@ HOMEPAGE
 }
 
 #home-projects .project-preview {
-  height: 500px;
+  height: auto;
 }
 
 .project-preview {
@@ -963,7 +1022,6 @@ BUTTON
 -------------------------------- */
 .btn {
   text-decoration: none;
-  border: 1px solid rgba(38, 39, 45, 0.1);
   border-radius: 30px;
   -moz-border-radius: 30px;
   -webkit-border-radius: 30px;
@@ -972,28 +1030,52 @@ BUTTON
   font-size: 16px;
   line-height: 1.42857143;
   padding: 9px 28px;
+  -webkit-transition: -webkit-transform 0.25s cubic-bezier(0.4, -0.65, 0.3, 2.8);
+  transition: transform 0.25s cubic-bezier(0.4, -0.65, 0.3, 2.8);
 }
-#store {
+.store {
   text-align: center;
   margin-top: 40px;
 }
-#store .btn-dark {
+.store .btn-dark {
   background-color: #131315;
   color: white;
   margin: 10px;
 }
-#store .btn-dark i {
+.store .btn i {
   font-size: 32px;
   display: inline-block;
   margin-left: 0;
   margin-right: 18px;
 }
-#store .btn-dark span {
+.store .btn span {
   font-size: 12px;
   display: inline-block;
   text-align: left;
 }
-#store .btn-dark span b {
+.store .btn span b {
   font-size: 22px;
   line-height: 18px;
+}
+.store .btn:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  border: none;
+}
+.store .btn-light {
+  background-color: #95A6B4;
+  color: white;
+  margin: 10px;
+}
+/* -------------------------------- 
+
+BACKGROUNDS
+
+-------------------------------- */
+.blue-grey {
+  background-color: #bdc3c7;
+}
+.light-grey {
+  background-color: #fafafa;
 }
