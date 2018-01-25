@@ -402,7 +402,8 @@ img {
 #map-view img,
 #fast-check-in img,
 #events img,
-#time-and-attendance img {
+#time-and-attendance img,
+#etime img {
   -webkit-box-shadow: 0 .25rem 2.5rem rgba(0,0,0,0.2);
   box-shadow: 0 .25rem 2.5rem rgba(0,0,0,0.2);
 }
