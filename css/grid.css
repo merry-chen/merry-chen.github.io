@@ -395,7 +395,7 @@ NAVIGATION
 .navigation .title, .navigation-title {
   display: inline;
   font-size: 13px;
-  line-height: 65px;
+  line-height: 80px;
   font-weight: 700;
   color: rgba(0,0,0,.72);
   text-transform: uppercase;
@@ -427,7 +427,7 @@ NAVIGATION
 .navigation-link {
   display: inline;
   font-size: 13px;
-  line-height: 45px;
+  line-height: 50px;
   font-weight: 700;
   color: rgba(0,0,0,.72);
   text-transform: uppercase;
@@ -468,6 +468,6 @@ NAVIGATION
 }
 @media (min-width: 992px) {
   #home-projects .project-preview {
-      height: 500px;
+      height: 550px;
   }
 }
